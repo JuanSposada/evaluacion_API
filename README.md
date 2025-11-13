@@ -1,4 +1,5 @@
 # Portada institucional
+<img width="460" height="505" alt="image" src="https://github.com/user-attachments/assets/e97f9984-3958-4680-8140-eaeeb4a2c719" />
 
 - Institución: Instituto Tecnologico de Ensenada
 - Carrera: Ingeniería de Sistemas  
