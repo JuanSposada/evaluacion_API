@@ -73,11 +73,13 @@ Archivos principales:
 - Errores comunes: 400 validación, 409 email duplicado.
 
 2) Listar pacientes  
-- GET /api/pacientes  
+- GET /api/pacientes
+- Este enpoint devulve todos los pacientes que tenemos registrados en nuestro Json. 
 - Response 200: `{ "success": true, "data": [ ... ] }`
 
 3) Obtener paciente por ID  
-- GET /api/pacientes/:id  
+- GET /api/pacientes/:id
+- Obtiene el paciente que concide con el parametro de ID
 - Response 200 o 404 si no existe.
 
 4) Actualizar paciente  
@@ -99,9 +101,12 @@ Archivos principales:
 - Response 201 o 400 si faltan campos o existe duplicado.
 
 6) Listar / obtener doctores  
-- GET /api/doctores  
-- GET /api/doctores/:id  
+- GET /api/doctores
+- Este endpoint enlista todos los docotores registrados en nuestro archivo json
+- GET /api/doctores/:id
+- Este endpoint regresa el doctor registrado que corresponda al parametro de ID.
 - GET /api/doctores/especialidad/:especialidad
+- Este endpoint te enlista todos los Doctores que cuentan con la especialidad incluida en el paramtreo
 
 7) Agendar cita  
 - POST /api/citas  
@@ -120,15 +125,25 @@ Archivos principales:
 - Response 201 o 400 con motivo del error.
 
 8) Listar / obtener / cancelar citas  
-- GET /api/citas  
-- GET /api/citas/:id  
+- GET /api/citas
+- Devuelve todas las citas registradas en nuestro json
+- GET /api/citas/:id
+- devuelve la cita que coicide con el parametro de ID 
 - PUT /api/citas/:id/cancelar — solo citas en estado `programada`.
+- Actualiza una cita para cambiarla al estado de una cita de programado a cancelado.
 
 9) Consultas y utilidades
-- GET /api/doctores/disponibles?fecha=YYYY-MM-DD&hora=HH:MM  
-- GET /api/citas?fecha=YYYY-MM-DD&estado=programada  
-- GET /api/notificaciones/citas-proximas — citas en 24 horas  
-- Estadísticas: `/api/estadisticas/doctores`, `/api/estadisticas/especialidades`
+- GET /api/doctores/disponibles?fecha=YYYY-MM-DD&hora=HH:MM
+- Este endpoint regresa los doctores disponibles en una fecha dada, o si no le incluye parametro, toma la fecha y hora actual.
+- GET /api/citas?fecha=YYYY-MM-DD&estado=programada
+- Obtiene todas las citas de una fecha en especifico siempre y cuando este como programada  
+- GET /api/notificaciones/citas-proximas — citas en 24 horas
+- Regresa las citas agendadas en las proximas 24 horas, tomando en cuenta tu fecha actual  
+- Estadísticas:
+- GET /api/estadisticas/doctores
+- Te devuelve el doctor que tiene mas citas agendadas.
+- GET /api/estadisticas/especialidades
+- Te devuelve la especialidad con mas Doctores
 
 ---
 
