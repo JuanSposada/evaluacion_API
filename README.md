@@ -217,7 +217,4 @@ Resultados (OK = pasado):
 Para reproducir: usar curl o Postman contra `server.js`. Las funciones principales están en `utils/fileManager.js`.
 
 ---
-
-# Notas finales
-- Mantener validación tanto en capas de request (middleware) como en modelo/almacenamiento.  
-- Si se desea, puedo crear el archivo README.md directamente en el proyecto (indica si quieres que lo haga).  
+  
