@@ -1,13 +1,13 @@
 # Portada institucional
-<img width="460" height="505" alt="image" src="https://github.com/user-attachments/assets/e97f9984-3958-4680-8140-eaeeb4a2c719" />
+<img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/24192bbc-9d9a-4f37-8734-63ea9175f79f" />
 
-- Institución: Instituto Tecnologico de Ensenada
-- Carrera: Ingeniería de Sistemas  
-- Materia: DESARROLLO WEB 1
-- Nombre de la actividad: Evaluación - API "Citas Médicas"  
-- Estudiante: JUAN SEBASTIAN MORENO POSADA (22760047)  
-- Docente: Xenia Padilla  
-- Fecha: 2025-11-08
+# Instituto Tecnologico de Ensenada
+## Carrera: Ingeniería de Sistemas  
+### Materia: DESARROLLO WEB 1
+### Nombre de la actividad: Evaluación - API "Citas Médicas"  
+### Estudiante: JUAN SEBASTIAN MORENO POSADA (22760047)  
+### Docente: Xenia Padilla  
+#### Fecha: 2025-11-08
 
 ---
 
